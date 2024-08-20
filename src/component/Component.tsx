@@ -18,7 +18,7 @@ import React from "react";
 // - render() 메서드의 반환값으로 렌더링 하고자 하는 요소를 반환
 // - 하나의 컴포넌트를 클래스의 인스턴스로 인식
 
-export class ClassComponent extends React.Component {
+export class ClassComponent extends React.Component { 
   render(): React.ReactNode {
     return (
       <h1>클래스형 컴포넌트</h1>
@@ -66,7 +66,8 @@ export function FunctionComponent() {
 // }
 
 export default function Component() {
-  //렌더링 : 화면에 표현하는 것을 뜻함
+  
+  // 렌더링 : 화면에 표현하는 것을 뜻함
   // 함수형 컴포넌트의 return
   // - 함수형 컴포넌트의 return은 해당 컴포넌트가 렌더링할 요소를 반환
   // - HTML처럼 보이지만 HTML이 아님
