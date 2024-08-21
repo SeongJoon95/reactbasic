@@ -1,0 +1,22 @@
+.table {
+  width: 300px;
+  /* background-color: beige; */
+  border-style: solid;
+}
+
+.th {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* border-style: solid; */
+}
+
+.tr {
+  display: flex;
+  /* border-style: solid; */
+}
+
+.td {
+  flex: 1;
+  text-align: center;
+  /* border-style: solid; */
+}

@@ -26,7 +26,7 @@ function IfComponent({ num }: Props) {
 function TreeTermComponent({num} : Props) {
   // num 값이 양수면 붉은색, 음수면 파란색, 0이면 초록색으로 표시
   return (
-    <h1 style={{color: num>0 ? 'red' : num < 0 ? 'blue' : 'green'}}> {num}</h1> 
+    <h1 style={{color: num>0 ? 'red' : num < 0 ? 'blue' : 'green'}}>{num}</h1> 
   )
 }
 
