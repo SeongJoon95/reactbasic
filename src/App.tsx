@@ -6,6 +6,9 @@ import "./App.css";
 // import ConditionalRender from "./component_manage/ConditionalRender";
 // import CurlyBraces from "./component/CurlyBraces";
 import Example2 from "./component_manage/example/Example2";
+import HookComponent1 from "./hook/HookComponent1";
+import HookComponent2 from "./hook/HookComponent2";
+import CustomHook from "./hook/CustomHook";
 // import ListRender from "./component_manage/ListRender";
 
 
@@ -19,9 +22,11 @@ function App() {
       {/* <Properties /> */}
       {/* <Gallery /> */}
       {/* <ConditionalRender /> */}
-      <Example2 />
+      {/* <Example2 /> */}
       {/* <ListRender /> */}
-
+      {/* <HookComponent1 /> */}
+      {/* <HookComponent2 /> */}
+      <CustomHook />
     </>
   );
 }
