@@ -25,15 +25,13 @@ function Profile({name, imageId, profession, awardsCount, awards ,discovered}: P
       />
       <ul>
         <li>
-          <b>Profession: </b>
-          {profession}
+          <b>Profession: </b> {profession}
         </li>
         <li>
           <b>Awards: {awardsCount} </b>({awards})
         </li>
         <li>
-          <b>Discovered: </b>
-          {discovered}
+          <b>Discovered: </b>{discovered}
         </li>
       </ul>
     </section>

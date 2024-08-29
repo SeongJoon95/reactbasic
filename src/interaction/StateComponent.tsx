@@ -16,7 +16,8 @@ export default function StateComponent() {
     // let counts: number[] = [];
     const [counts, setCounts] = useState<number[]>([0]);
 
-    const [comment, setComment] = useState<string>('');
+    const [
+        comment, setComment] = useState<string>('');
 
     let comm = '';
     const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
