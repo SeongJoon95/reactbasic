@@ -35,7 +35,7 @@ export default function ListRender() {
     <div>
       {listItems}
       {/* item과 index의 값이 동일하므로 하나만 작성해줌 */}
-      {counts.map((item) => (<h5 key={item}>반복작업</h5>))}
+      {counts.map((item, key) => (<h5 key={item}>{key}</h5>))}
       {counts2.map((item, index) => (<h5 key={index}>반복작업2</h5>))}
       {fiEmployees.map((item, index) => (
         <h5 key={index}>{`이름 : ${item.name} / 부서 : ${item.department}`}</h5>
