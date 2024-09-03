@@ -30,6 +30,7 @@ interface Store {
 
 const useStore = create<Store>((set) =>({
     address:'', 
+    count:0,
     // set 함수의 매개변수로는 현재 상태(store)를 받는 콜백함수를 전달
     // set 함수에 전달한 콜백함수는 변경된 상태(store)를 반환
     setAddress: (address:string) => set((state) =>(
@@ -37,13 +38,14 @@ const useStore = create<Store>((set) =>({
             // address,
             // setAddress: state.setAddress
             // '...'을 이용하여 모든 값 복사 + 변경할 값만 적어주면 됨
-        {...state, address}))
+        {...state, address})),
+    setCount: (count:number) => set((state) =>({...state, count}))
 }));
 
 export default function Zustand() {
     
     // zustand로 선언한 상태 사용 방법
-    // // const{ 상태, ..., 상태 변경 함수, ... } = useStort 훅함수();
+    // const{ 상태, ..., 상태 변경 함수, ... } = useStort 훅함수();
     // const {address, setAddress} = useStore();
     
     // const onChange = (event: ChangeEvent<HTMLInputElement>) => {

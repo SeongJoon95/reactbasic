@@ -19,6 +19,8 @@ import Component, { FunctionComponent } from "./component/Component";
 import Zustand from "./zustand/Zustand";
 import ListRender2 from "./component_manage/ListRender2";
 import ListRender from "./component_manage/ListRender";
+import ReactCookie from "./react-cookie/ReactCookie";
+import Axios from "./axios/Axios";
 
 // react-router 패키지:
 // - react의 SPA(Single Page Application)에서 라우팅을 구현하기 위한 라이브러리
@@ -65,20 +67,22 @@ function App() {
     <Routes>
       <Route index element={<h1>기본 페이지</h1>} />
 
-        <Route path="/component" element={<Layout/>}>
+        <Route path="/component" element={<Layout />}>
           <Route index element={<Component />} />
-          <Route path='Component' element={<Component/>} />
-          <Route path='FunctionComponent' element={<FunctionComponent/>} />
-          <Route path="CurlyBraces" element={<CurlyBraces/>}/>
+          <Route path='Component' element={<Component />} />
+          <Route path='FunctionComponent' element={<FunctionComponent />} />
+          <Route path="CurlyBraces" element={<CurlyBraces />}/>
         </Route>
 
         <Route path="/router">
-          <Route path="query-string" element={<QueryString/>} />
-          <Route path="path-variable/:name" element={<PathVariable/>} />
-          <Route path="path-move" element={<PathMove/>} />
+          <Route path="query-string" element={<QueryString />} />
+          <Route path="path-variable/:name" element={<PathVariable />} />
+          <Route path="path-move" element={<PathMove />} />
         </Route>
+        <Route path="/zustand" element={<Zustand />} />
+        <Route path="/react-cookie" element={<ReactCookie />} />
+        <Route path="/axios" element={<Axios />}/>
         <Route path="*" element={<h1>404!!!</h1>}></Route>
-        <Route path="/zustand" element={<Zustand/>}></Route>
 
         {/* 내가 연습하려고 따로 만든 것 */}
         <Route path="/component_manage">
